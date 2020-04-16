@@ -21,6 +21,19 @@ filetype plugin indent on    " required
 "filetype plugin on
 colorscheme onedark
 
+syntax on
 set number
+set mouse=a
+set mousemodel=popup
 map <C-j> :move+<CR>
 map <C-k> :move-2<CR>
+cnoreabbrev W! w!
+cnoreabbrev Q! q!
+cnoreabbrev Qall! qall!
+cnoreabbrev Wq wq
+cnoreabbrev Wa wa
+cnoreabbrev wQ wq
+cnoreabbrev WQ wq
+cnoreabbrev W w
+cnoreabbrev Q q
+cnoreabbrev Qall qall
