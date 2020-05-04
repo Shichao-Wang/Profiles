@@ -25,6 +25,12 @@ syntax on
 set number
 set mouse=a
 set mousemodel=popup
+
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+
 map <C-j> :move+<CR>
 map <C-k> :move-2<CR>
 cnoreabbrev W! w!
