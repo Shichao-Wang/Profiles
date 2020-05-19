@@ -19,17 +19,23 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
-colorscheme onedark
+
+colorscheme gruvbox
+set background=dark
 
 syntax on
 set number
 set mouse=a
 set mousemodel=popup
+set guioptions+=a
 
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
+
+autocmd FileType html setlocal tabstop=2 shiftwidth=2 softtabstop=2
+autocmd FileType vim setlocal tabstop=2 shiftwidth=2 softtabstop=2
 
 map <C-j> :move+<CR>
 map <C-k> :move-2<CR>

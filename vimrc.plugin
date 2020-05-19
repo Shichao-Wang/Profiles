@@ -2,7 +2,7 @@
 let g:ale_completion_enabled = 1
 let g:ale_sign_column_always = 1
 let g:ale_fix_on_save = 1
-let g:ale_fixers = {'python': ['black', 'isort']}
+let g:ale_fixers = {'python': ['black', 'isort'], 'json':['prettier']}
 let g:ale_set_quickfix = 0
 let g:ale_open_list = 1
 let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
@@ -22,3 +22,5 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail'
 
 Plugin 'joshdick/onedark.vim'
+Plugin 'morhetz/gruvbox'
+
