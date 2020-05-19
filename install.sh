@@ -1,10 +1,5 @@
 #!/bin/bash
 
-# install vundle
-if [ ! -d "$HOME/.vim/bundle/Vundle.vim" ]; then
-  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-fi
-
 detech_and_backup() {
   local target_file=$1
   if [ -e "$target_file" ]; then
@@ -17,8 +12,6 @@ detech_and_backup() {
 cwd="$(dirname "$(readlink -f "$0")")"
 detech_and_backup "$HOME/.vimrc"
 ln -s "$cwd/vimrc" "$HOME/.vimrc" 
-detech_and_backup "$HOME/.vimrc.plugin"
-ln -s "$cwd/vimrc.plugin" "$HOME/.vimrc.plugin" 
-
-vim +PluginInstall +qall
+detech_and_backup "$HOME/.vim-plug.vimrc"
+ln -s "$cwd/vim-plug.vimrc" "$HOME/.vim-plug.vimrc" 
 
