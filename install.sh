@@ -16,9 +16,9 @@ detech_and_backup() {
 
 cwd="$(dirname "$(readlink -f "$0")")"
 detech_and_backup "$HOME/.vimrc"
-ln -s "$HOME/.vimrc" "$cwd/vimrc"
+ln -s "$cwd/vimrc" "$HOME/.vimrc" 
 detech_and_backup "$HOME/.vimrc.plugin"
-ln -s "$HOME/.vimrc.plugin" "$cwd/vimrc.plugin"
+ln -s "$cwd/vimrc.plugin" "$HOME/.vimrc.plugin" 
 
 vim +PluginInstall +qall
 
