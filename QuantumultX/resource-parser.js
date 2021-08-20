@@ -1,1 +1,0 @@
-../Repos/QuantumultX/Scripts/resource-parser.js
