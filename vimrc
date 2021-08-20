@@ -20,6 +20,7 @@ set expandtab
 autocmd FileType html setlocal tabstop=2 shiftwidth=2 softtabstop=2
 autocmd FileType vim setlocal tabstop=2 shiftwidth=2 softtabstop=2
 
+imap jj <ESC>
 map <C-j> :move+<CR>
 map <C-k> :move-2<CR>
 cnoreabbrev W! w!
