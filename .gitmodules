@@ -1,0 +1,3 @@
+[submodule "Repos/QuantumultX"]
+	path = Repos/QuantumultX
+	url = git@github.com:KOP-XIAO/QuantumultX.git
