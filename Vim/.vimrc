@@ -1,6 +1,6 @@
-let PluginFile=$HOME . "/.vim-plug.vimrc"
-if filereadable(PluginFile)
-  exec "source" PluginFile
+let PlugFile=$HOME . "/.plug.vimrc"
+if filereadable(PlugFile)
+  exec "source" PlugFile
 endif
 
 colorscheme gruvbox
