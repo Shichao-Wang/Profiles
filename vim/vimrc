@@ -1,4 +1,4 @@
-let PlugFile=$HOME . "/.plug.vimrc"
+let PlugFile=$HOME . "/.vim/plug.vimrc"
 if filereadable(PlugFile)
   exec "source" PlugFile
 endif
