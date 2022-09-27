@@ -1,9 +1,9 @@
-let PlugFile=$HOME . "/.vim/plug.vimrc"
-if filereadable(PlugFile)
-  exec "source" PlugFile
+let plugfile=$HOME . "/.vim/plug.vimrc"
+if filereadable(plugfile)
+  exec "source" plugfile
 endif
 
-colorscheme gruvbox
+" colorscheme gruvbox
 set background=dark
 
 syntax on
