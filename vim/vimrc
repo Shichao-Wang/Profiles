@@ -3,7 +3,10 @@ if filereadable(plugfile)
   exec "source" plugfile
 endif
 
-" colorscheme gruvbox
+let g:onedark_config = {
+    \ 'style': 'darker',
+\}
+colorscheme onedark
 set background=dark
 
 syntax on
