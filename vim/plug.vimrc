@@ -5,7 +5,7 @@ if empty(glob('~/.vim/autoload/plug.vim'))
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
-call plug#begin('~/.vim/plug') " Change default installation directory to vundle's
+call plug#begin('~/.vim/plugged') " Change default installation directory to vundle's
 
 
 " Plug 'davidhalter/jedi-vim', { 'for': 'python' }
